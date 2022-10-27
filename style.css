@@ -1,0 +1,178 @@
+
+.parent{
+    width: 100%;
+    height: 450px;
+    /* height: 460px; */
+    /* background-color: yellow; */
+    background-color: black;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+.child{
+    width: 60px;
+    height: 60px;
+    background-color:blueviolet;
+    animation-name: animation_1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.child-1{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    animation-name: animation_2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.child-2{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    animation-name: animation_3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.child-3{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    animation-name: animation_4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.main{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: animation_main;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animation_1 {
+    0%{
+        background-color: yellow;
+        transition: translateY(0%);
+        border-radius: 20px;
+    }
+    20%{
+        background-color:blue;
+        transform: translateY(640%);
+        border-radius: 30px;
+        color: white;
+    }
+    60%{
+        background-color: chartreuse;
+        transform: translateY(640%) translateX(1550%);
+        border-radius: 40px;
+        color: red;
+    }
+    80%{
+        background-color:chocolate;
+        transform: translateX(1550%) translateY(0%);
+        border-radius: 45px;
+        color: yellow;
+    }
+    100%{
+        background-color: red;
+        transform: translateX(0%) translateY(0%);
+        border-radius: 50px;
+        color: white;
+    }
+}
+@keyframes animation_2 {
+    0%{
+        background-color: green;
+        transition: translateY(0%);
+        border-radius: 20px;
+    }
+    20%{
+        background-color:orange;
+        transform: translateY(400%);
+        border-radius: 30px;
+    }
+    60%{
+        background-color: white;
+        transform: translateY(400%) translateX(1570%);
+        border-radius: 40px;
+    }
+    80%{
+        background-color:red;
+        transform: translateX(1570%) translateY(0%);
+        border-radius: 45px;
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(0%) translateY(0%);
+        border-radius: 50px;
+    }
+}
+@keyframes animation_3 {
+    0%{
+        background-color: green;
+        transition: translateY(0%);
+        border-radius: 20px;
+    }
+    50%{
+        background-color:orange;
+        transform: translateX(1570%);
+        border-radius: 30px;
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(0%) translateY(0%);
+        border-radius: 50px;
+    }
+}
+@keyframes animation_4 {
+    0%{
+        background-color: green;
+        transition: translateY(0%);
+        border-radius: 20px;
+    }
+    50%{
+        background-color:orange;
+        transform: translateX(1570%);
+        border-radius: 30px;
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(0%) translateY(0%);
+        border-radius: 50px;
+    }
+}
+
+@keyframes animation_main {
+    0%{
+        background-color: green;
+    }
+    20%{
+        background-color:orange;
+        width: 100px;
+        height: 100px;
+    }
+    60%{
+        background-color: white;
+        width: 200px;
+        height: 200px;
+    }
+    80%{
+        background-color:red;
+        width: 300px;
+        height: 300px;
+    }
+    100%{
+        background-color:olive;
+        width: 400px;
+        height: 400px;
+
+    }
+}
